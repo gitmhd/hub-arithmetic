@@ -36,10 +36,8 @@ class HubArithmetic {
       let dividend = +improper[0],
          divisor = +improper[1],
          reminder = 0;
-      for (let i = 1; +improper[0] >= i; i++) {
-         if (dividend % divisor === 0) {
-            break;
-         }
+      for (let i = 1; +improper[0] >= i; i += 1) {
+         if (dividend % divisor === 0) break;
          reminder += 1;
          dividend -= 1;
       }
@@ -67,5 +65,14 @@ class HubArithmetic {
 
    isOddNum(num) {
       return Boolean(num % 2);
+   }
+
+   factorsOf(num) {
+      let factors = [];
+      for (let i = 1; num >= i; i += 1) {
+         if (!(num % i)) factors.push(i);
+         if (num / 2 === i) break;
+      }
+      return [...factors, num];
    }
 }
