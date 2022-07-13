@@ -26,7 +26,7 @@ class HubArithmetic {
                "distributive",
                "multiplicative identity",
             ];
-         case "division":
+         default:
             return "N/A";
       }
    }
