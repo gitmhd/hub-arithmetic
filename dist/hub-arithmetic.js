@@ -8,7 +8,7 @@ class HubArithmetic {
       this.version = "1.0.0";
    }
 
-   properties(operation) {
+   propertiesOf(operation) {
       switch (operation.toLowerCase()) {
          case "addition":
             return [
