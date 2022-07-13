@@ -54,6 +54,10 @@ class HubArithmetic {
    }
 
    wholeNumToPercent(got, total) {
-      return `${(got * 100) / total}%`;
+      return (got * 100) / total;
+   }
+
+   percentToWholeNum(gotInPercent, total) {
+      return (gotInPercent * total) / 100;
    }
 }
