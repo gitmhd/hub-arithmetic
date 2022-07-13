@@ -75,4 +75,8 @@ class HubArithmetic {
       }
       return [...factors, num];
    }
+
+   isPrimeNum(num) {
+      return this.factorsOf(num).toString() === [1, num].toString();
+   }
 }
