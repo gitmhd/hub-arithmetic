@@ -77,6 +77,24 @@ class HubArithmetic {
    }
 
    isPrimeNum(num) {
-      return this.factorsOf(num).toString() === [1, num].toString();
+      return num === 1
+         ? false
+         : this.factorsOf(num).toString() === [1, num].toString();
+   }
+
+   primeFactorsOf(num) {
+      let factors = [],
+         divisor = 2;
+
+      while (num >= 2) {
+         if (num % divisor === 0) {
+            factors.push(divisor);
+            num = num / divisor;
+         } else {
+            divisor++;
+         }
+      }
+
+      return factors.length ? factors : null;
    }
 }
