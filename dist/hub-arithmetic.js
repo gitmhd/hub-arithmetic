@@ -47,4 +47,9 @@ class HubArithmetic {
          reminder ? `${reminder}/${divisor}` : ""
       }`;
    }
+
+   mixedToImproper(mixed) {
+      mixed = mixed.replace(" ", "/").split("/");
+      return `${+mixed[0] * +mixed[2] + +mixed[1]}/${+mixed[2]}`;
+   }
 }
