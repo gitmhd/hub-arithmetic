@@ -1,0 +1,26 @@
+{
+  "name": "hub-arithmetic",
+  "version": "1.0.0",
+  "description": "A library extends you with useful tools to make arithmetic operations more easily.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmhd/hub-arithmetic.git"
+  },
+  "keywords": [
+    "arithmetic",
+    "hub",
+    "hub-arithmetic",
+    "math",
+    "operations"
+  ],
+  "author": "Mohamed Albissaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitmhd/hub-arithmetic/issues"
+  },
+  "homepage": "https://github.com/gitmhd/hub-arithmetic#readme"
+}
