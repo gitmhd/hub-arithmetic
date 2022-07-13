@@ -64,4 +64,8 @@ class HubArithmetic {
    isEvenNum(num) {
       return !Boolean(num % 2);
    }
+
+   isOddNum(num) {
+      return Boolean(num % 2);
+   }
 }
