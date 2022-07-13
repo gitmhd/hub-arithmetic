@@ -7,4 +7,27 @@ class HubArithmetic {
    constructor() {
       this.version = "1.0.0";
    }
+
+   properties(operation) {
+      switch (operation.toLowerCase()) {
+         case "addition":
+            return [
+               "commutative",
+               "associative",
+               "distributive",
+               "additive identity",
+            ];
+         case "subtraction":
+            return ["identity", "distributive"];
+         case "multiplication":
+            return [
+               "commutative",
+               "associative",
+               "distributive",
+               "multiplicative identity",
+            ];
+         case "division":
+            return "N/A";
+      }
+   }
 }
