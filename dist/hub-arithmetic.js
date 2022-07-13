@@ -52,4 +52,8 @@ class HubArithmetic {
       mixed = mixed.replace(" ", "/").split("/");
       return `${+mixed[0] * +mixed[2] + +mixed[1]}/${+mixed[2]}`;
    }
+
+   wholeNumToPercent(got, total) {
+      return `${(got * 100) / total}%`;
+   }
 }
