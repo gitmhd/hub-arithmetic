@@ -71,7 +71,7 @@ class HubArithmetic {
       let factors = [];
       for (let i = 1; num >= i; i += 1) {
          if (!(num % i)) factors.push(i);
-         if (num / 2 === i) break;
+         if (Math.ceil(num / 2) === i) break;
       }
       return [...factors, num];
    }
