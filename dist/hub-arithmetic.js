@@ -60,4 +60,8 @@ class HubArithmetic {
    percentToWholeNum(gotInPercent, total) {
       return (gotInPercent * total) / 100;
    }
+
+   isEvenNum(num) {
+      return !Boolean(num % 2);
+   }
 }
