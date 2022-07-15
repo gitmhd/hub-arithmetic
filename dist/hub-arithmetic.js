@@ -97,4 +97,17 @@ class HubArithmetic {
 
       return factors.length ? factors : null;
    }
+
+   LCMOf(num1, num2) {
+      let multiplies = [],
+         result = [];
+
+      for (let i = 1; ; i += 1) {
+         multiplies.push(num1 * i, num2 * i);
+         result = multiplies.filter(
+            (item, index, arr) => arr.indexOf(item) !== index
+         );
+         if (result.length) return +result.toString();
+      }
+   }
 }
