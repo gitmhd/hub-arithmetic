@@ -110,4 +110,13 @@ class HubArithmetic {
          if (result.length) return +result.toString();
       }
    }
+
+   GCFOf(num1, num2) {
+      let bothFactors = [
+         ...this.factorsOf(num1),
+         ...this.factorsOf(num2),
+      ].filter((item, index, arr) => arr.indexOf(item) !== index);
+
+      return Math.max(...bothFactors);
+   }
 }
